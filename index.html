@@ -84,6 +84,9 @@
       zoom: 11.15
     });
 
+    var nav = new mapboxgl.NavigationControl();
+    map.addControl(nav, 'top-right');
+
     map.on('load', function () {
       // When a click event occurs on a feature in the places layer, open a popup at the
       // location of the feature, with description HTML from its properties.
